@@ -1,6 +1,6 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/g1em27qde3f4r2yo?svg=true)](https://ci.appveyor.com/project/vapanov/ahj-popovers)
+[![Build status](https://ci.appveyor.com/api/projects/status/4hh0797tq40rcuh9?svg=true)](https://ci.appveyor.com/project/vapanov/ahj-list-editor)
 
-WEB Version https://valentin-panov.github.io/ahj-popovers/
+WEB Version https://valentin-panov.github.io/ahj-list-editor/
 
 ---
 
