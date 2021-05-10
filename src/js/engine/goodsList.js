@@ -194,11 +194,17 @@ export default class GoodsList {
     const isValid = form.checkValidity();
 
     if (!isValid) {
-      // remove invalid class from all valid elements
-      [...form.elements].find((o) => o.validity.valid).classList.remove('invalid');
+      // switch .invalid on all valid elements to .valid
+      [...form.elements]
+        .filter((o) => o.validity.valid && !o.classList.contains('btn'))
+        .forEach((el) => {
+          el.classList.add('valid');
+          el.classList.remove('invalid');
+        });
 
       const first = [...form.elements].find((o) => !o.validity.valid);
       first.focus();
+      first.classList.remove('valid');
       first.classList.add('invalid');
 
       const ValidityState = first.validity;
